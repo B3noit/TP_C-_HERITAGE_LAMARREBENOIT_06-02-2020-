@@ -8,13 +8,7 @@ private:
 
 public:
 	CVectb(int nDebut, int nFin) : CVect(nFin - nDebut + 1)
-	{
-		nMin = nDebut; nMax = nFin;
-	}
-
 	int & operator [] (int nInt)//redéfinition de l'opérateur
-	{
-		return pAdr[nInt - nMin];
-	}
+
 };
 

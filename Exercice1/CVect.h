@@ -7,8 +7,9 @@ protected:
 	int* pAdr;//adresse zone dynamique contenant les éléments
 
 public:
-	CVect(int); //constructeur (précise la taille du vecteur)
+	/*CVect(int nElem); //constructeur (précise la taille du vecteur)*/
+	CVect(int nElem); //constructeur (précise la taille du vecteur)
 	~CVect(); //destructeur
-	int & operator [] (int); //accès à un élément par son "indice"
+	int & operator [] (int nIndex); //accès à un élément par son "indice"
 };
 
